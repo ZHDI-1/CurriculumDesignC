@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script src="./depends/min.js"></script>
+    <script src="./src/main.js"></script>
+</head>
+
+<body>
+    <h2>新建事项</h2>
+    <form action="./src/newAffair.php" method="get">
+        事务名称：<input type="text" placeholder="完成青年大学习" name="affair">
+        事务时间：<input type="text" placeholder="24:00" name="time">
+
+        <button type="submit" id="new_affair">新建事务</button>
+    </form>
+    <h2>删除事项</h2>
+
+    事务名称：<input type="text" placeholder="完成青年大学习" name="affair" id="delete_affair">
+    事务时间：<input type="text" placeholder="24:00" name="time" id="delete_time">
+
+    <button type="submit" id="delete_affair_button">删除事务</button>
+    <h2>事件列表</h2>
+    <script src="./src/delete.js"></script>
+</body>
+
+</html>
